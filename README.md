@@ -5,6 +5,7 @@ La idea de crear este repo surgio despues de recibir un correo de un colega, dic
 # Créditos
 
 [Eduardo] - programador original de Bitphp.
+
 Fernando - por codificar un Syntax Highlighter del lenguaje Medusa para editores de texto.
 
 Gracias a:
@@ -18,4 +19,4 @@ Por ayudar a difundir Bitphp.
 [Eduardo]: <mailto://eduardo@root404.com>
 [Root404 Co]: <http://root404.com>
 [EnterGeek]: <https://www.facebook.com/EnterGeekTech>
-[PHP Virtual Academy]: <https://www.facebook.com/pvacademy>
+[PHP Virtual Academy]: <https://www.facebook.com/pvacademy> 
