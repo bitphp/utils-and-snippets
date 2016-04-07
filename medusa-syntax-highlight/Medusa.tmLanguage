@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>medusa.php</string>
+	</array>
+	<key>name</key>
+	<string>Medusa Bitphp</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Match numbers 1,2,3,4..</string>
+			<key>match</key>
+			<string>\d+</string>
+			<key>name</key>
+			<string>constant.numeric.medusa</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.unquoted.medusa</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Tab stops :extends, :css, :js, :block</string>
+			<key>match</key>
+			<string>\:(extends|css|js|block|include)\ (.+)</string>
+			<key>name</key>
+			<string>support.function.medusa</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators highlight</string>
+			<key>match</key>
+			<string>(\&lt;|\&gt;|\=|\!|\+|\-|\*|\/|\|)</string>
+			<key>name</key>
+			<string>keyword.other.medusa</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Tab stops :if, :for</string>
+			<key>match</key>
+			<string>\:\w+</string>
+			<key>name</key>
+			<string>support.function.medusa</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Language variables</string>
+			<key>match</key>
+			<string>(\@baseurl|as|=&gt;)</string>
+			<key>name</key>
+			<string>variable.language.medusa</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(\{\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.medusa</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Short echo &amp; array {{  }}</string>
+			<key>end</key>
+			<string>(\}\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.medusa</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>variable.complex.medusa</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variables</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>variables</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.medusa</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.medusa</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Tab stops like $foo, $bar...</string>
+			<key>match</key>
+			<string>\$\w+(\.)?(\w+)?</string>
+			<key>name</key>
+			<string>keyword.other.medusa</string>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>text.html.medusa</string>
+	<key>uuid</key>
+	<string>4dee6061-1663-48db-af77-f59ed05d8c95</string>
+</dict>
+</plist>
